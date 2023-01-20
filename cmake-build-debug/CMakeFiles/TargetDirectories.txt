@@ -1,0 +1,3 @@
+C:/Users/Kamilla/CLionProjects/DTG-ws4/cmake-build-debug/CMakeFiles/DTG_ws4.dir
+C:/Users/Kamilla/CLionProjects/DTG-ws4/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Kamilla/CLionProjects/DTG-ws4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
