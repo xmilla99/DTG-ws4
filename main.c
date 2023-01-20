@@ -23,12 +23,16 @@ int isGcd1(int x){
         a = b;
         b = r;
     }
-    return (a == 1);
+    if(a == 1) {
+        return 1;
+    }else{return 0;}
 }
 
 /* This function should return 1 if 9^x-2 mod 5 = 2 and 0 otherwise */
 int is2mod5(int x){
-    return (pow((-1),x)) - 2 % 5 == 2; 
+    if((pow((-1),x)) - 2 % 5 == 2){
+        return 1;
+    }else{return 0;}
 }
 
 
@@ -44,10 +48,11 @@ int main(void){
     q = isGcd1(x);
     r = is2mod5(x);
 
-    if ((p && !r) || !(p || !q || r) || (!p && !q && r)){
+    if ((p && !r) || !p && q &&!r || (!p && !q && r)){
         printf("You have found a valid x\n");
         printf("p is %d, q is %d, and r is %d\n", p,q,r);
     } else {
+        printf("p is %d, q is %d, and r is %d\n", p,q,r);
         printf("Try again!\n");
     }
 
